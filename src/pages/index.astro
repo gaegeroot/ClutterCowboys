@@ -1,81 +1,1449 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import '../styles/style.scss';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
-</Layout>
+<!DOCTYPE html>
+<html lang="en">
 
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reliable junk hauling & removal services in Tucson, AZ. We handle residential & commercial junk, from furniture to debris. Get a clutter-free space! Call now.">
+  <meta name="keywords" content="Junk removal, junk hauling, scrap hauling, cleanout services, clutter removal, construction cleanup, appliance disposal, furniture removal">
+  <meta name="author" content="Clutter Cowboys">
+  <title>Tucson Junk Removal and Hauling Specialists | Clutter Cowboys</title>
+  <meta property="og:image" content="https://cluttercowboys.com/social-card-hd.jpg" />
+  <meta property="og:title" content="Tucson Junk Removal and Hauling Specialists | Clutter Cowboys" />
+  <meta property="og:description" content="Reliable junk hauling & removal services in Tucson, AZ. We handle residential & commercial junk, from furniture to debris. Get a clutter-free space! Call now." />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="836" />
+  <link rel="shortcut icon" href="/favicon.png">
+  <link rel="stylesheet" href="/css/external.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-RRBJ4Q5G6B"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-RRBJ4Q5G6B');
+    gtag('config', 'AW-949945401');
+  </script>
+  <script>
+    gtag('config', 'AW-949945401/J5beCNXO8KAYELmI_MQD', {
+      'phone_conversion_number': '520-600-6322'
+    });
+  </script>
+  <!-- Meta Pixel Code -->
+  <script>
+    ! function(f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function() {
+        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '241669498554433');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=241669498554433&ev=PageView&noscript=1" />
+  </noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+  <div class="content-wrapper">
+    <header class="wrapper mb-2">
+      <div class="bg-primary text-white fw-bold fs-15">
+        <div class="container py-2 d-md-flex flex-md-row  d-none d-md-block">
+          <div class="d-flex flex-row align-items-center">
+            <div class="icon text-white fs-22 mt-1 me-2"> <i class="uil uil-location-pin-alt"></i></div>
+            <address class="mb-0">Tucson, Arizona</address>
+          </div>
+          <div class="d-flex flex-row align-items-center me-6 ms-auto">
+            <div class="icon text-white fs-22 mt-1 me-2"> <i class="uil uil-phone-volume"></i></div>
+            <a href="tel:520-600-6322" class="mb-0 text-white link-white hover">520-600-6322</a>
+          </div>
+          <div class="d-flex flex-row align-items-center">
+            <div class="icon text-white fs-22 mt-1 me-2"> <i class="uil uil-message"></i></div>
+            <p class="mb-0"><a href="mailto:hello@cluttercowboys.com" class="link-white hover">hello@cluttercowboys.com</a></p>
+          </div>
+        </div>
+        <!-- /.container -->
+      </div>
+      <nav class="navbar navbar-expand-lg classic transparent navbar-light">
+        <div class="container flex-lg-row flex-nowrap align-items-center">
+          <div class="navbar-brand w-100 py-3">
+            <a href="./">
+              <img src="/images/cc-text-logo.png"  alt="" />
+            </a>
+          </div>
+          <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+            <div class="offcanvas-header d-lg-none">
+              <h3 class="text-white fs-30 mb-0">Sandbox</h3>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+              <ul class="navbar-nav">
+                <!-- <li class="nav-item dropdown dropdown-mega">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Demos</a>
+                <ul class="dropdown-menu mega-menu mega-menu-dark mega-menu-img">
+                    <li class="mega-menu-content mega-menu-scroll">
+                        <ul class="row row-cols-1 row-cols-lg-6 gx-0 gx-lg-4 gy-lg-2 list-unstyled">
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo1.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi1.jpg"
+                                            srcset="./assets/img/demos/mi1@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 1</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo2.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi2.jpg"
+                                            srcset="./assets/img/demos/mi2@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 2</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo3.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi3.jpg"
+                                            srcset="./assets/img/demos/mi3@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 3</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo4.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi4.jpg"
+                                            srcset="./assets/img/demos/mi4@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 4</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo5.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi5.jpg"
+                                            srcset="./assets/img/demos/mi5@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 5</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo6.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi6.jpg"
+                                            srcset="./assets/img/demos/mi6@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 6</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo7.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi7.jpg"
+                                            srcset="./assets/img/demos/mi7@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 7</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo8.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi8.jpg"
+                                            srcset="./assets/img/demos/mi8@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 8</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo9.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi9.jpg"
+                                            srcset="./assets/img/demos/mi9@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 9</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo10.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi10.jpg"
+                                            srcset="./assets/img/demos/mi10@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 10</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo11.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi11.jpg"
+                                            srcset="./assets/img/demos/mi11@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 11</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo12.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi12.jpg"
+                                            srcset="./assets/img/demos/mi12@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 12</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo13.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi13.jpg"
+                                            srcset="./assets/img/demos/mi13@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 13</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo14.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi14.jpg"
+                                            srcset="./assets/img/demos/mi14@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 14</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo15.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi15.jpg"
+                                            srcset="./assets/img/demos/mi15@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 15</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo16.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi16.jpg"
+                                            srcset="./assets/img/demos/mi16@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 16</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo17.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi17.jpg"
+                                            srcset="./assets/img/demos/mi17@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 17</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo18.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi18.jpg"
+                                            srcset="./assets/img/demos/mi18@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 18</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo19.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi19.jpg"
+                                            srcset="./assets/img/demos/mi19@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 19</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo20.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi20.jpg"
+                                            srcset="./assets/img/demos/mi20@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 20</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo21.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi21.jpg"
+                                            srcset="./assets/img/demos/mi21@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 21</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo22.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi22.jpg"
+                                            srcset="./assets/img/demos/mi22@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 22</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo23.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi23.jpg"
+                                            srcset="./assets/img/demos/mi23@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 23</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo24.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi24.jpg"
+                                            srcset="./assets/img/demos/mi24@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 24</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo25.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi25.jpg"
+                                            srcset="./assets/img/demos/mi25@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 25</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo26.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi26.jpg"
+                                            srcset="./assets/img/demos/mi26@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 26</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo27.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi27.jpg"
+                                            srcset="./assets/img/demos/mi27@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 27</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo28.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi28.jpg"
+                                            srcset="./assets/img/demos/mi28@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 28</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo29.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi29.jpg"
+                                            srcset="./assets/img/demos/mi29@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 29</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo30.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi30.jpg"
+                                            srcset="./assets/img/demos/mi30@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 30</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo31.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi31.jpg"
+                                            srcset="./assets/img/demos/mi31@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 31</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo32.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi32.jpg"
+                                            srcset="./assets/img/demos/mi32@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 32</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo33.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi33.jpg"
+                                            srcset="./assets/img/demos/mi33@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 33</span>
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a class="dropdown-item" href="./demo34.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img
+                                            src="./assets/img/demos/mi34.jpg"
+                                            srcset="./assets/img/demos/mi34@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 34</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <span class="d-none d-lg-flex"><i class="uil uil-direction"></i><strong>Scroll to view
+                                more</strong></span>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#"
+                            data-bs-toggle="dropdown">Services</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="dropdown-item" href="./services.html">Services I</a>
+                            </li>
+                            <li class="nav-item"><a class="dropdown-item" href="./services2.html">Services
+                                    II</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#"
+                            data-bs-toggle="dropdown">About</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="dropdown-item" href="./about.html">About I</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="./about2.html">About II</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#"
+                            data-bs-toggle="dropdown">Shop</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="dropdown-item" href="./shop.html">Shop I</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="./shop2.html">Shop II</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="./shop-product.html">Product
+                                    Page</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="./shop-cart.html">Shopping
+                                    Cart</a></li>
+                            <li class="nav-item"><a class="dropdown-item"
+                                    href="./shop-checkout.html">Checkout</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#"
+                            data-bs-toggle="dropdown">Contact</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="dropdown-item" href="./contact.html">Contact I</a>
+                            </li>
+                            <li class="nav-item"><a class="dropdown-item" href="./contact2.html">Contact II</a>
+                            </li>
+                            <li class="nav-item"><a class="dropdown-item" href="./contact3.html">Contact III</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#"
+                            data-bs-toggle="dropdown">Career</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="dropdown-item" href="./career.html">Job Listing I</a>
+                            </li>
+                            <li class="nav-item"><a class="dropdown-item" href="./career2.html">Job Listing
+                                    II</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="./career-job.html">Job
+                                    Description</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#"
+                            data-bs-toggle="dropdown">Utility</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="dropdown-item" href="./404.html">404 Not Found</a>
+                            </li>
+                            <li class="nav-item"><a class="dropdown-item" href="./page-loader.html">Page
+                                    Loader</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="./signin.html">Sign In I</a>
+                            </li>
+                            <li class="nav-item"><a class="dropdown-item" href="./signin2.html">Sign In II</a>
+                            </li>
+                            <li class="nav-item"><a class="dropdown-item" href="./signup.html">Sign Up I</a>
+                            </li>
+                            <li class="nav-item"><a class="dropdown-item" href="./signup2.html">Sign Up II</a>
+                            </li>
+                            <li class="nav-item"><a class="dropdown-item" href="./terms.html">Terms</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="dropdown-item" href="./pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="./onepage.html">One Page</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Projects</a>
+                <div class="dropdown-menu dropdown-lg">
+                    <div class="dropdown-lg-content">
+                        <div>
+                            <h6 class="dropdown-header">Project Pages</h6>
+                            <ul class="list-unstyled">
+                                <li><a class="dropdown-item" href="./projects.html">Projects I</a></li>
+                                <li><a class="dropdown-item" href="./projects2.html">Projects II</a></li>
+                                <li><a class="dropdown-item" href="./projects3.html">Projects III</a></li>
+                                <li><a class="dropdown-item" href="./projects4.html">Projects IV</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h6 class="dropdown-header">Single Projects</h6>
+                            <ul class="list-unstyled">
+                                <li><a class="dropdown-item" href="./single-project.html">Single Project I</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./single-project2.html">Single Project II</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./single-project3.html">Single Project
+                                        III</a></li>
+                                <li><a class="dropdown-item" href="./single-project4.html">Single Project IV</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li> -->
+                <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
+                <ul class="dropdown-menu">
+                    <li class="nav-item"><a class="dropdown-item" href="./blog.html">Blog without Sidebar</a>
+                    </li>
+                    <li class="nav-item"><a class="dropdown-item" href="./blog2.html">Blog with Sidebar</a></li>
+                    <li class="nav-item"><a class="dropdown-item" href="./blog3.html">Blog with Left Sidebar</a>
+                    </li>
+                    <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#"
+                            data-bs-toggle="dropdown">Blog Posts</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="dropdown-item" href="./blog-post.html">Post without
+                                    Sidebar</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="./blog-post2.html">Post with
+                                    Sidebar</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="./blog-post3.html">Post with
+                                    Left Sidebar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown dropdown-mega">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blocks</a>
+                <ul class="dropdown-menu mega-menu mega-menu-dark mega-menu-img">
+                    <li class="mega-menu-content">
+                        <ul class="row row-cols-1 row-cols-lg-6 gx-0 gx-lg-6 gy-lg-4 list-unstyled">
+                            <li class="col"><a class="dropdown-item" href="./docs/blocks/about.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                            src="./assets/img/demos/block1.svg" alt=""></div>
+                                    <span>About</span>
+                                </a>
+                            </li>
+                            <li class="col"><a class="dropdown-item" href="./docs/blocks/blog.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                            src="./assets/img/demos/block2.svg" alt=""></div>
+                                    <span>Blog</span>
+                                </a>
+                            </li>
+                            <li class="col"><a class="dropdown-item" href="./docs/blocks/call-to-action.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                            src="./assets/img/demos/block3.svg" alt=""></div>
+                                    <span>Call to Action</span>
+                                </a>
+                            </li>
+                            <li class="col"><a class="dropdown-item" href="./docs/blocks/clients.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                            src="./assets/img/demos/block4.svg" alt=""></div>
+                                    <span>Clients</span>
+                                </a>
+                            </li>
+                            <li class="col"><a class="dropdown-item" href="./docs/blocks/contact.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                            src="./assets/img/demos/block5.svg" alt=""></div>
+                                    <span>Contact</span>
+                                </a>
+                            </li>
+                            <li class="col"><a class="dropdown-item" href="./docs/blocks/facts.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                            src="./assets/img/demos/block6.svg" alt=""></div>
+                                    <span>Facts</span>
+                                </a>
+                            </li>
+                            <li class="col"><a class="dropdown-item" href="./docs/blocks/faq.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                            src="./assets/img/demos/block7.svg" alt=""></div>
+                                    <span>FAQ</span>
+                                </a>
+                            </li>
+                            <li class="col"><a class="dropdown-item" href="./docs/blocks/features.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                            src="./assets/img/demos/block8.svg" alt=""></div>
+                                    <span>Features</span>
+                                </a>
+                            </li>
+                            <li class="col"><a class="dropdown-item" href="./docs/blocks/footer.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                            src="./assets/img/demos/block9.svg" alt=""></div>
+                                    <span>Footer</span>
+                                </a>
+                            </li>
+                            <li class="col"><a class="dropdown-item" href="./docs/blocks/hero.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                            src="./assets/img/demos/block10.svg" alt=""></div>
+                                    <span>Hero</span>
+                                </a>
+                            </li>
+                            <li class="col"><a class="dropdown-item" href="./docs/blocks/misc.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                            src="./assets/img/demos/block17.svg" alt=""></div>
+                                    <span>Misc</span>
+                                </a>
+                            </li>
+                            <li class="col"><a class="dropdown-item" href="./docs/blocks/navbar.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                            src="./assets/img/demos/block11.svg" alt=""></div>
+                                    <span>Navbar</span>
+                                </a>
+                            </li>
+                            <li class="col"><a class="dropdown-item" href="./docs/blocks/portfolio.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                            src="./assets/img/demos/block12.svg" alt=""></div>
+                                    <span>Portfolio</span>
+                                </a>
+                            </li>
+                            <li class="col"><a class="dropdown-item" href="./docs/blocks/pricing.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                            src="./assets/img/demos/block13.svg" alt=""></div>
+                                    <span>Pricing</span>
+                                </a>
+                            </li>
+                            <li class="col"><a class="dropdown-item" href="./docs/blocks/process.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                            src="./assets/img/demos/block14.svg" alt=""></div>
+                                    <span>Process</span>
+                                </a>
+                            </li>
+                            <li class="col"><a class="dropdown-item" href="./docs/blocks/team.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                            src="./assets/img/demos/block15.svg" alt=""></div>
+                                    <span>Team</span>
+                                </a>
+                            </li>
+                            <li class="col"><a class="dropdown-item" href="./docs/blocks/testimonials.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                            src="./assets/img/demos/block16.svg" alt=""></div>
+                                    <span>Testimonials</span>
+                                </a>
+                            </li>
+                        </ul>
+                      
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown dropdown-mega">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Documentation</a>
+                <ul class="dropdown-menu mega-menu">
+                    <li class="mega-menu-content">
+                        <div class="row gx-0 gx-lg-3">
+                            <div class="col-lg-4">
+                                <h6 class="dropdown-header">Usage</h6>
+                                <ul class="list-unstyled cc-2 pb-lg-1">
+                                    <li><a class="dropdown-item" href="./docs/index.html">Get Started</a></li>
+                                    <li><a class="dropdown-item" href="./docs/forms.html">Forms</a></li>
+                                    <li><a class="dropdown-item" href="./docs/faq.html">FAQ</a></li>
+                                    <li><a class="dropdown-item" href="./docs/changelog.html">Changelog</a></li>
+                                    <li><a class="dropdown-item" href="./docs/credits.html">Credits</a></li>
+                                </ul>
+                                <h6 class="dropdown-header mt-lg-6">Styleguide</h6>
+                                <ul class="list-unstyled cc-2">
+                                    <li><a class="dropdown-item" href="./docs/styleguide/colors.html">Colors</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./docs/styleguide/fonts.html">Fonts</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./docs/styleguide/icons-svg.html">SVG
+                                            Icons</a></li>
+                                    <li><a class="dropdown-item" href="./docs/styleguide/icons-font.html">Font
+                                            Icons</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="./docs/styleguide/illustrations.html">Illustrations</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="./docs/styleguide/backgrounds.html">Backgrounds</a></li>
+                                    <li><a class="dropdown-item" href="./docs/styleguide/misc.html">Misc</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-8">
+                                <h6 class="dropdown-header">Elements</h6>
+                                <ul class="list-unstyled cc-3">
+                                    <li><a class="dropdown-item"
+                                            href="./docs/elements/accordion.html">Accordion</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/alerts.html">Alerts</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="./docs/elements/animations.html">Animations</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/avatars.html">Avatars</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="./docs/elements/background.html">Background</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/badges.html">Badges</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./docs/elements/buttons.html">Buttons</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./docs/elements/card.html">Card</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="./docs/elements/carousel.html">Carousel</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="./docs/elements/dividers.html">Dividers</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/form-elements.html">Form
+                                            Elements</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/image-hover.html">Image
+                                            Hover</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/image-mask.html">Image
+                                            Mask</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="./docs/elements/lightbox.html">Lightbox</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/player.html">Media
+                                            Player</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/modal.html">Modal</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="./docs/elements/pagination.html">Pagination</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="./docs/elements/progressbar.html">Progressbar</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/shadows.html">Shadows</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./docs/elements/shapes.html">Shapes</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./docs/elements/tables.html">Tables</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./docs/elements/tabs.html">Tabs</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="./docs/elements/text-animations.html">Text Animations</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/text-highlight.html">Text
+                                            Highlight</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/tiles.html">Tiles</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="./docs/elements/tooltips-popovers.html">Tooltips &
+                                            Popovers</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="./docs/elements/typography.html">Typography</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li> -->
+              </ul>
+              <!-- /.navbar-nav -->
+              <div class="offcanvas-footer d-lg-none">
+                <div>
+                  <a href="mailto:first.last@email.com" class="link-inverse">info@email.com</a>
+                  <br /> 00 (123) 456 78 90 <br />
+                  <nav class="nav social social-white mt-4">
+                    <a href="#"><i class="uil uil-twitter"></i></a>
+                    <a href="#"><i class="uil uil-facebook-f"></i></a>
+                    <a href="#"><i class="uil uil-dribbble"></i></a>
+                    <a href="#"><i class="uil uil-instagram"></i></a>
+                    <a href="#"><i class="uil uil-youtube"></i></a>
+                  </nav>
+                  <!-- /.social -->
+                </div>
+              </div>
+              <!-- /.offcanvas-footer -->
+            </div>
+            <!-- /.offcanvas-body -->
+          </div>
+          <!-- /.navbar-collapse -->
+          <div class="navbar-other ms-lg-4">
+            <ul class="navbar-nav flex-row align-items-center ms-auto">
+              <li class="nav-item">
+                <a href="tel:520-600-6322" class="btn btn-sm btn-primary rounded-pill text-white">520-600-6322</a>
+              </li>
+              <li class="nav-item d-none d-lg-none">
+                <button class="hamburger offcanvas-nav-btn"><span></span></button>
+              </li>
+            </ul>
+            <!-- /.navbar-nav -->
+          </div>
+          <!-- /.navbar-other -->
+        </div>
+        <!-- /.container -->
+      </nav>
+      <!-- /.navbar -->
+    </header>
+    <!-- /header -->
+    <section class="wrapper bg-light position-relative min-vh-70 d-lg-flex align-items-center mb-14">
+      <div class="rounded-4-lg-start col-lg-6 order-lg-2 position-lg-absolute top-0 end-0 image-wrapper bg-image bg-cover h-100 min-vh-30" data-image-src="/images/relaxing_junk_free.jpg" style="box-shadow: -10px 10px 10px #12121226;">
+      </div>
+      <!--/column -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="mt-10 mt-md-11 mt-lg-n10 px-2 px-md-11 ps-lg-0 pe-lg-13 text-center text-lg-start" data-cues="slideInDown" data-group="page-title" data-delay="600">
+              <h1 class="display-1 mb-5">You have junk.<br>We make it disappear.</h1>
+              <p class="lead fs-25 lh-sm pe-md-10">Transparent pricing and lightning fast service make us Tucson's top choice for junk removal and hauling.</p>
+              <div class="d-flex justify-content-center justify-content-lg-start flex-wrap" id="page-title-buttons" data-cues="slideInDown" data-group="page-title-buttons" data-delay="900">
+                <span><a href="tel:520-600-6322" class="btn btn-primary rounded-pill btn-icon btn-icon-start text-white me-4 mt-5"><i class="uil uil-phone"></i>520-600-6322</a></span>
+                <div class="d-flex mt-5 justify-content-center">
+                  <span class="me-4 fs-22 mt-1">or</span>
+                  <a href="#estimate-job" class="btn btn-expand btn-soft-primary rounded-pill scroll">
+                    <i class="uil uil-arrow-right"></i>
+                    <span>Get a quick estimate</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!--/div -->
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <section class="wrapper bg-soft-ash angled upper-start lower-start">
+      <div class="container pt-14 pt-md-8 pb-10">
+        <div class="row gx-lg-8 gx-xl-12 gy-12 align-items-center">
+          <div class="col-lg-6 position-relative order-last">
+            <div class="row gx-md-5 gy-5 align-items-center">
+              <div class="col-md-6">
+                <div class="row gx-md-5 gy-5 d-none d-md-block">
+                  <div class="col-md-10 offset-md-2">
+                    <figure class="rounded"><img src="/images/carrying-couch-2.jpg" alt="Couple carrying couch"></figure>
+                  </div>
+                  <!--/column -->
+                  <div class="col-md-12">
+                    <figure class="rounded"><img src="/images/carrying-junk.jpg" alt="Carrying junk"></figure>
+                  </div>
+                  <!--/column -->
+                </div>
+                <!--/.row -->
+              </div>
+              <!--/column -->
+              <div class="col-md-6">
+                <figure class="rounded"><img src="/images/frustrated-junk-removal.jpg" alt="Junk removal frustration"></figure>
+              </div>
+              <!--/column -->
+            </div>
+            <!--/.row -->
+          </div>
+          <!--/column -->
+          <div class="col-lg-6 order-lg-last">
+            <h3 class="display-5 mb-5">Junk removal is no walk in the park</h3>
+            <p class="mb-7 fs-lg">We're people just like you so we've had to deal with our own fair share of junk in the past. It can be downright frustrating trying to figure out when to get it done, how to move the heavy stuff, where it should even go, and how to get it there.</p>
+            <p class="fs-lg mb-4">Any of these bring back (bad) memories?</p>
+            <div class="row gy-3">
+              <div class="col-xl-6">
+                <ul class="icon-list bullet-bg bullet-soft-primary mb-0">
+                  <li><span><i class="uil uil-check"></i></span><span>Navigating a couch through a doorway</span></li>
+                  <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Spending hours breaking up junk to distribute on trash pickup days</span></li>
+                </ul>
+              </div>
+              <!--/column -->
+              <div class="col-xl-6">
+                <ul class="icon-list bullet-bg bullet-soft-primary mb-0">
+                  <li><span><i class="uil uil-check"></i></span><span>Hoping the mattress doesn't unfold halfway up the stairs</span></li>
+                  <li class="mt-3"><span><i class="uil uil-check"></i></span>Balancing a heavy refrigerator on a rickety dolly<span></span></li>
+                </ul>
+              </div>
+              <!--/column -->
+            </div>
+            <!--/.row -->
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+    </section>
+    <section class="wrapper bg-light">
+      <div class="container py-14 py-md-14">
+        <div class="row gx-lg-8 gx-xl-12 gy-8">
+          <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+            <h3 class="display-4 mb-7 mt-10 px-xl-11 text-center">So you're probably dealing with...</h3>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex flex-row">
+              <div>
+                <img src="/icons/lineal/directions.svg" class="svg-inject icon-svg icon-svg-md text-primary me-4" alt="" />
+              </div>
+              <div>
+                <h4 class="mb-1">Overwhelming clutter</h4>
+                <p class="mb-0">Living or working in a space filled with unwanted items can create a constant feeling of chaos and unease.</p>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex flex-row">
+              <div>
+                <img src="/icons/lineal/clock-3.svg" class="svg-inject icon-svg icon-svg-md text-yellow me-4" alt="" />
+              </div>
+              <div>
+                <h4 class="mb-1">Limited time and energy</h4>
+                <p class="mb-0">Dealing with junk removal is physically demanding and time-consuming, taking away precious time and energy from other important commitments.</p>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex flex-row">
+              <div>
+                <img src="/icons/lineal/adjust.svg" class="svg-inject icon-svg icon-svg-md text-navy me-4" alt="" />
+              </div>
+              <div>
+                <h4 class="mb-1">Lack of proper tools and resources</h4>
+                <p class="mb-0">Removing and disposing of junk often requires specialized tools, equipment, and knowledge that you may not have.</p>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex flex-row">
+              <div>
+                <img src="/icons/lineal/balance.svg" class="svg-inject icon-svg icon-svg-md text-yellow me-4" alt="" />
+              </div>
+              <div>
+                <h4 class="mb-1">Heavy lifting and physical strain</h4>
+                <p class="mb-0">Moving large or bulky items during junk removal can be physically challenging and may potentially lead to injuries.</p>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex flex-row">
+              <div>
+                <img src="/icons/lineal/truck.svg" class="svg-inject icon-svg icon-svg-md text-leaf me-4" alt="" />
+              </div>
+              <div>
+                <h4 class="mb-1">Disposal logistics</h4>
+                <p class="mb-0">Figuring out proper disposal methods, recycling options, and navigating local regulations can be complex and time-consuming.</p>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex flex-row">
+              <div>
+                <img src="/icons/lineal/heart.svg" class="svg-inject icon-svg icon-svg-md text-red me-4" alt="" />
+              </div>
+              <div>
+                <h4 class="mb-1">Emotional attachment</h4>
+                <p class="mb-0">Letting go of sentimental items can be emotionally difficult, and having professional assistance can ease the process.</p>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+    </section>
+    <section class="wrapper bg-light">
+      <div class="container">
+        <div class="card image-wrapper bg-full bg-image bg-overlay bg-overlay-300 mb-14" data-image-src="/images/bg13.jpg">
+          <div class="card-body p-10 p-xl-12">
+            <div class="row text-center">
+              <div class="col-xl-11 col-xxl-9 mx-auto">
+                <h3 class="fs-16 text-uppercase text-white mb-7">Well, we've got some good news...</h3>
+                <h3 class="display-3 px-lg-8 pt-10 text-white">We're here to take care of <span class="underline-3 style-1 white">everything*</span></h3>
+                <p class="fs-14 text-white mb-7 pb-10">*as long as it's junk related, of course</p>
+                <div class="d-flex align-items-center justify-content-center main-cta-action">
+                  <span><a href="tel:520-600-6322" class="btn btn-xl btn-soft-primary rounded-pill btn-icon btn-icon-start me-4 my-2"><i class="uil uil-phone"></i>Call now</a></span>
+                  <span class="text-white">for a <b>no-obligation</b> estimate or <a href="#our-work" class="text-decoration-underline text-white scroll">learn a bit more about what we do below</a></span>
+                </div>
+              </div>
+              <!-- /column -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!--/.card-body -->
+        </div>
+        <!--/.card -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <section class="wrapper bg-light">
+      <div class="container">
+        <div class="row gx-lg-8 gy-8 mt-5 mt-md-12 mt-lg-0 mb-15 align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="row gx-md-5 gy-5" data-cues="fadeIn" data-group="images" data-disabled="true">
+              <div class="col-md-4 offset-md-2 align-self-end" data-cue="fadeIn" data-group="images" data-show="true" style="animation-name: fadeIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+                <figure class="rounded"><img src="/images/box-truck.jpg" alt="Empty Clutter Cowboys Box Truck"></figure>
+              </div>
+              <!--/column -->
+              <div class="col-md-6 align-self-end d-none d-md-block" data-cue="fadeIn" data-group="images" data-show="true" style="animation-name: fadeIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 300ms; animation-direction: normal; animation-fill-mode: both;">
+                <figure class="rounded"><img src="/images/clutter-cowboys-cleanout.jpg" alt="Clutter Cowboys Box Truck"></figure>
+              </div>
+              <!--/column -->
+              <div class="col-md-6 offset-md-1" data-cue="fadeIn" data-group="images" data-show="true" style="animation-name: fadeIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 600ms; animation-direction: normal; animation-fill-mode: both;">
+                <figure class="rounded"><img src="/images/garage-cleanout-pile.jpg" alt="Pile of junk to clean from a garage"></figure>
+              </div>
+              <!--/column -->
+              <div class="col-md-4 align-self-start d-none d-md-block" data-cue="fadeIn" data-group="images" data-show="true" style="animation-name: fadeIn; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 900ms; animation-direction: normal; animation-fill-mode: both;">
+                <figure class="rounded"><img src="/images/moving-a-vase.jpg" alt="Moving some living room junk"></figure>
+              </div>
+              <!--/column -->
+            </div>
+            <!--/.row -->
+          </div>
+          <!--/column -->
+          <div class="col-lg-6">
+            <h2 class="display-4 mb-3">Clutter Cowboys is a <span class="underline-3 style-3 primary">different kind</span> of junk removal company</h2>
+            <p class="lead fs-lg mb-8 pe-xxl-2">Just because it's messy, unglamorous work doesn't mean you should have to deal with rude people, poor communication, outdated processes, and unreliable scheduling.</p>
+            <div class="row gx-xl-10 gy-6" data-cues="slideInUp" data-group="services" data-disabled="true">
+              <div class="col-md-6 col-lg-12 col-xl-6" data-cue="slideInUp" data-group="services" data-show="true" style="animation-name: slideInUp; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+                <div class="d-flex flex-row">
+                  <div>
+                    <div class="icon btn btn-circle btn-lg btn-outline-primary pe-none me-5"> <i class="uil uil-dollar-alt fs-35"></i> </div>
+                  </div>
+                  <div>
+                    <h4 class="mb-1">Transparent pricing</h4>
+                    <p class="mb-0">No more guesswork or surprises</p>
+                  </div>
+                </div>
+              </div>
+              <!--/column -->
+              <div class="col-md-6 col-lg-12 col-xl-6" data-cue="slideInUp" data-group="services" data-show="true" style="animation-name: slideInUp; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 300ms; animation-direction: normal; animation-fill-mode: both;">
+                <div class="d-flex flex-row">
+                  <div>
+                    <div class="icon btn btn-circle btn-lg btn-outline-primary pe-none me-5"> <i class="uil uil-clock fs-35"></i> </div>
+                  </div>
+                  <div>
+                    <h4 class="mb-1">On <span class="underline-3 style-2">your</span> schedule</h4>
+                    <p class="mb-0">No more scheduling headaches and long arrival windows.</p>
+                  </div>
+                </div>
+              </div>
+              <!--/column -->
+              <div class="col-md-6 col-lg-12 col-xl-6" data-cue="slideInUp" data-group="services" data-show="true" style="animation-name: slideInUp; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 600ms; animation-direction: normal; animation-fill-mode: both;">
+                <div class="d-flex flex-row">
+                  <div>
+                    <div class="icon btn btn-circle btn-lg btn-outline-primary pe-none me-5"> <i class="uil uil-map-pin-alt fs-35"></i> </div>
+                  </div>
+                  <div>
+                    <h4 class="mb-1">Community focused</h4>
+                    <p class="mb-0">Your money stays in Tucson and we support local businesses and organizations</p>
+                  </div>
+                </div>
+              </div>
+              <!--/column -->
+              <div class="col-md-6 col-lg-12 col-xl-6" data-cue="slideInUp" data-group="services" data-show="true" style="animation-name: slideInUp; animation-duration: 700ms; animation-timing-function: ease; animation-delay: 900ms; animation-direction: normal; animation-fill-mode: both;">
+                <div class="d-flex flex-row">
+                  <div>
+                    <div class="icon btn btn-circle btn-lg btn-outline-primary pe-none me-5"> <i class="uil uil-desert fs-35"></i> </div>
+                  </div>
+                  <div>
+                    <h4 class="mb-1">Environmentally conscious</h4>
+                    <p class="mb-0">We're constantly improving our processes for better junk disposal and business operations.</p>
+                  </div>
+                </div>
+              </div>
+              <!--/column -->
+            </div>
+            <!--/.row -->
+          </div>
+          <!--/column -->
+        </div>
+      </div>
+    </section>
+    <section class="wrapper bg-soft-primary" id="estimate-job">
+      <div class="container py-14 py-md-14">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h3 class="fs-30 text-uppercase text-primary mb-3">Want a quick estimate before calling?</h3>
+            <p class="lead mb-10"><b>Imagine all your junk as <span class="underline-3 style-3">refrigerator-sized</span> piles. Then change the number below.</b></p>
+            <h4 class="display-6 mb-0 user-select-none">Your <i id="decrease_pile" class="uil uil-minus-circle fs-28 me-1 text-primary text-opacity-50 cursor-pointer"></i><span id="pile_number" class="underline-3 style-2 fs-40">6</span><i id="increase_pile" class="uil uil-plus-circle fs-28 ms-1 text-primary cursor-pointer"></i> piles will cost between <span id="lower_estimate" class="underline-3 style-2">$231</span> and <span id="upper_estimate" class="underline-3 style-2">$363</span>.</h4>
+          </div>
+          <!-- /column -->
+        </div>
+        <div class="d-flex align-items-center justify-content-center mt-12 main-cta-action">
+          <span><a href="tel:520-600-6322" class="btn btn-xl btn-primary rounded-pill btn-icon btn-icon-start text-white me-4 my-2"><i class="uil uil-phone"></i>Call now</a></span>
+          <span>for a <b>no-obligation, in-person</b> estimate (we never charge just to come out)</span>
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <section class="wrapper bg-light">
+      <div class="container py-14 py-md-16">
+        <div class="row gy-10 gy-sm-13 gx-lg-3 align-items-center">
+          <div class="col-md-8 col-lg-6 position-relative">
+            <div class="shape bg-dot primary rellax w-17 h-21" data-rellax-speed="1" style="top: -2rem; left: -1.9rem;"></div>
+            <div class="shape rounded bg-soft-primary rellax d-md-block" data-rellax-speed="0" style="bottom: -1.8rem; right: -1.5rem; width: 85%; height: 90%; "></div>
+            <figure class="rounded"><img src="/images/smiling-while-planning.jpg" alt="Smiling while scheduling junk removal" /></figure>
+          </div>
+          <!--/column -->
+          <div class="col-lg-5 col-xl-4 offset-lg-1">
+            <h2 class="display-3 mb-3">Our process couldn't be easier</h2>
+            <p class="lead fs-lg mb-6">If we made it any simpler, it would literally be magic.</p>
+            <div class="d-flex flex-row mb-6">
+              <div>
+                <span class="icon btn btn-circle btn-outline-primary pe-none me-5"><span class="number fs-18">1</span></span>
+              </div>
+              <div>
+                <h4 class="mb-1">Schedule an on-site quote</h4>
+                <p class="mb-0">We show up, give you a no-nonsense final price after looking at everything, and are ready to do the job on the spot if the price works for you.</p>
+              </div>
+            </div>
+            <div class="d-flex flex-row mb-6">
+              <div>
+                <span class="icon btn btn-circle btn-outline-primary pe-none me-5"><span class="number fs-18">2</span></span>
+              </div>
+              <div>
+                <h4 class="mb-1">We haul your junk</h4>
+                <p class="mb-0">This is what you want. All your junk gone. It's what we do. And we leave your space better than we found it.</p>
+              </div>
+            </div>
+            <div class="d-flex flex-row">
+              <div>
+                <span class="icon btn btn-circle btn-outline-primary pe-none me-5"><span class="number fs-18">3</span></span>
+              </div>
+              <div>
+                <h4 class="mb-1">Easy-as-pie payment options</h4>
+                <p class="mb-0">We've got the latest equipment to easily and securely process card payments on the spot and immediately send you a receipt.</p>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <section class="wrapper bg-light">
+      <div class="container mb-14">
+        <div class="row">
+          <div class="col-xl-10 mx-auto">
+            <div class="card image-wrapper bg-full bg-image bg-overlay bg-overlay-400" data-image-src="/images/bg13.jpg">
+              <div class="card-body p-6 p-md-11 d-lg-flex flex-row align-items-lg-center justify-content-md-between text-center text-lg-start">
+                <h3 class="display-6 mb-6 mb-lg-0 pe-lg-10 pe-xl-5 pe-xxl-18 text-white">Ready for us to haul your junk?<br>Give us a call so we can take care of you.</h3>
+                <a href="tel:520-600-6322" class="btn btn-soft-primary btn-lg rounded-pill mb-0 btn-icon btn-icon-start"><i class="uil uil-phone"></i>520-600-6322</a>
+              </div>
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <section class="wrapper bg-light">
+      <div class="container mb-12">
+        <div class="row">
+          <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 mx-auto text-center">
+            <h2 class="fs-15 text-uppercase text-muted mb-3">People really like us</h2>
+            <h3 class="display-4 mb-10 px-xl-10 px-xxl-15">Don't take our word for it. Here's what some of our amazing customers had to say.</h3>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+        <div class="grid">
+          <div class="row isotope gy-6">
+            <div class="item col-md-6 col-xl-4">
+              <div class="card">
+                <div class="card-body">
+                  <span class="ratings five mb-3"></span>
+                  <blockquote class="icon mb-0">
+                    <p>“Top-notch service from Clutter Cowboys! They tackled my garage cleanout with impressive speed and professionalism. Friendly team, efficient work, and a clutter-free garage. Highly recommend! 👍”</p>
+                    <div class="blockquote-details">
+                      <img class="rounded-circle w-12" src="/avatars/te1.jpg" alt="" />
+                      <div class="info">
+                        <h5 class="mb-1">Imaan</h5>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!--/column -->
+            <div class="item col-md-6 col-xl-4">
+              <div class="card">
+                <div class="card-body">
+                  <span class="ratings five mb-3"></span>
+                  <blockquote class="icon mb-0">
+                    <p>“Overall, I was really happy with Clutter Cowboys' service. They made the whole process easy and stress-free. I'd definitely recommend them to anyone who needs junk pickup!”</p>
+                    <div class="blockquote-details">
+                      <img class="rounded-circle w-12" src="/avatars/te2.jpg" alt="" />
+                      <div class="info">
+                        <h5 class="mb-1">Elizabeth</h5>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!--/column -->
+            <div class="item col-md-6 col-xl-4">
+              <div class="card">
+                <div class="card-body">
+                  <span class="ratings five mb-3"></span>
+                  <blockquote class="icon mb-0">
+                    <p>“Clutter Cowboys rocked! They cleared out my house before I sold it, and I couldn't be happier. Super friendly, fast, and eco-friendly too. The place looked amazing when they were done. Highly recommend these guys!”</p>
+                    <div class="blockquote-details">
+                      <img class="rounded-circle w-12" src="/avatars/te3.jpg" alt="" />
+                      <div class="info">
+                        <h5 class="mb-1">Michael</h5>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!--/column -->
+            <div class="item col-md-6 col-xl-4">
+              <div class="card">
+                <div class="card-body">
+                  <span class="ratings five mb-3"></span>
+                  <blockquote class="icon mb-0">
+                    <p>“I recently had the pleasure of working with Clutter Cowboys in Tucson to clear out my cafe for a remodel, and I couldn't be more impressed. Their team was incredibly professional, courteous, and efficient. They took care of all the junk, leaving my place spotless. I highly recommend their services!"</p>
+                    <div class="blockquote-details">
+                      <img class="rounded-circle w-12" src="/avatars/t7.jpg" alt="" />
+                      <div class="info">
+                        <h5 class="mb-1">Tim</h5>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!--/column -->
+            <div class="item col-md-6 col-xl-4">
+              <div class="card">
+                <div class="card-body">
+                  <span class="ratings five mb-3"></span>
+                  <blockquote class="icon mb-0">
+                    <p>“Making a big move is already stressful enough without having to deal with all of the junk that's definitely not going with us. Clutter Cowboys came out quickly to handle it for us so we could focus on all the other stuff that mattered.”</p>
+                    <div class="blockquote-details">
+                      <img class="rounded-circle w-12" src="/avatars/te5.jpg" alt="" />
+                      <div class="info">
+                        <h5 class="mb-1">Jackie</h5>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!--/column -->
+            <div class="item col-md-6 col-xl-4">
+              <div class="card">
+                <div class="card-body">
+                  <span class="ratings five mb-3"></span>
+                  <blockquote class="icon mb-0">
+                    <p>“I recently used Clutter Cowboys after my kitchen remodel, and they were awesome! The people on the phone were super nice, and the crew was punctual and efficient. They got everything loaded onto their truck in no time and didn't damage any of my stuff. Clutter Cowboys is definitely the way to go for junk removal - fair prices and a cool team. I'll use them again for sure!”</p>
+                    <div class="blockquote-details">
+                      <img class="rounded-circle w-12" src="/avatars/te6.jpg" alt="" />
+                      <div class="info">
+                        <h5 class="mb-1">Adrian</h5>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!--/column -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.grid-view -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <section class="wrapper bg-light" id="our-work">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto mb-8">
+            <h2 class="fs-15 text-uppercase text-muted text-center mb-3">How can we help?</h2>
+            <h3 class="display-4 text-center">Every job is different, but here's some of the most common stuff we can help with</h3>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+        <div class="grid grid-view projects-masonry">
+          <div class="row gx-md-8 gy-10 gy-md-13 isotope mb-14">
+            <div class="project item col-md-6 col-xl-4 product">
+              <figure class="lift rounded mb-6">
+                <!-- <a href="./single-project.html">  -->
+                <img src="/images/estate-sale.jpg" alt="" />
+                <!-- </a> -->
+              </figure>
+              <div class="project-details d-flex justify-content-center flex-column">
+                <div class="post-header">
+                  <div class="post-category text-line mb-3 text-leaf">Residential</div>
+                  <h2 class="post-title h3">Estate Cleanouts</h2>
+                  <p>Managing the belongings of a deceased loved one can be emotionally challenging. Junk removal services can assist in efficiently clearing out the estate, handling items for donation, recycling, or disposal, and providing a compassionate approach during a difficult time.</p>
+                </div>
+                <!-- /.post-header -->
+              </div>
+              <!-- /.project-details -->
+            </div>
+            <!-- /.project -->
+            <div class="project item col-md-6 col-xl-4 workshop">
+              <figure class="lift rounded mb-6">
+                <!-- <a href="./single-project2.html">  -->
+                <img src="/images/home-remodel.jpg" alt="" />
+                <!-- </a> -->
+              </figure>
+              <div class="project-details d-flex justify-content-center flex-column">
+                <div class="post-header">
+                  <div class="post-category text-line mb-3 text-leaf">Residential/<span class="text-ash">Commercial</span></div>
+                  <h2 class="post-title h3">Renovation and Remodeling Projects</h2>
+                  <p>Home renovations and remodeling projects often generate a significant amount of debris, including construction materials, demolished fixtures, and old appliances. Junk removal companies can swiftly remove the debris, allowing the renovation process to progress smoothly.</p>
+                </div>
+                <!-- /.post-header -->
+              </div>
+              <!-- /.project-details -->
+            </div>
+            <!-- /.project -->
+            <div class="project item col-md-6 col-xl-4 still-life">
+              <figure class="lift rounded mb-6">
+                <!-- <a href="./single-project3.html"> -->
+                <img src="/images/abandoned-warehouse.jpg" alt="" />
+                <!-- </a> -->
+              </figure>
+              <div class="project-details d-flex justify-content-center flex-column">
+                <div class="post-header">
+                  <div class="post-category text-line mb-3 text-ash">Commercial</div>
+                  <h2 class="post-title h3">Business and Warehouse Cleanouts</h2>
+                  <p>Commercial spaces, offices, or retail stores may require junk removal services to clear out old inventory, outdated equipment, or office furniture. This allows businesses to optimize their space, create a more organized environment, and enhance productivity.</p>
+                </div>
+                <!-- /.post-header -->
+              </div>
+              <!-- /.project-details -->
+            </div>
+            <!-- /.project -->
+            <div class="project item col-md-6 col-xl-4 product">
+              <figure class="lift rounded mb-6">
+                <!-- <a href="./single-project2.html"> -->
+                <img src="/images/hoard-house.jpg" alt="" />
+                <!-- </a> -->
+              </figure>
+              <div class="project-details d-flex justify-content-center flex-column">
+                <div class="post-header">
+                  <div class="post-category text-line mb-3 text-leaf">Residential</div>
+                  <h2 class="post-title h3">Hoarding Situations</h2>
+                  <p> Individuals struggling with hoarding disorder often accumulate excessive possessions that can become overwhelming. Junk removal companies can provide specialized assistance in compassionate and discreet cleanouts, working alongside mental health professionals to address the underlying issues.</p>
+                </div>
+                <!-- /.post-header -->
+              </div>
+              <!-- /.project-details -->
+            </div>
+            <!-- /.project -->
+            <div class="project item col-md-6 col-xl-4 product">
+              <figure class="lift rounded mb-6">
+                <!-- <a href="./single-project.html"> -->
+                <img src="/images/concert-cleanup.jpg" alt="" />
+                <!-- </a> -->
+              </figure>
+              <div class="project-details d-flex justify-content-center flex-column">
+                <div class="post-header">
+                  <div class="post-category text-line mb-3 text-ash">Commercial</div>
+                  <h2 class="post-title h3">Public Event Cleanup</h2>
+                  <p>After hosting events, conferences, or parties, there is often a need for prompt cleanup to restore the venue to its original condition. Junk removal services can efficiently handle the removal of trash, discarded decorations, and event-related waste.</p>
+                </div>
+                <!-- /.post-header -->
+              </div>
+              <!-- /.project-details -->
+            </div>
+            <!-- /.project -->
+            <div class="project item col-md-6 col-xl-4 workshop">
+              <figure class="lift rounded mb-6">
+                <!-- <a href="./single-project3.html"> -->
+                <img src="/images/cluttered-garage.jpg" alt="" />
+                <!-- </a> -->
+              </figure>
+              <div class="project-details d-flex justify-content-center flex-column">
+                <div class="post-header">
+                  <div class="post-category text-line mb-3 text-leaf">Residential</div>
+                  <h2 class="post-title h3">Garage and Storage Unit Cleanouts</h2>
+                  <p>Over time, garages and basements can become repositories for unused or unwanted items. Junk removal businesses can assist in decluttering these spaces, making them functional again and freeing up storage capacity.</p>
+                </div>
+                <!-- /.post-header -->
+              </div>
+              <!-- /.project-details -->
+            </div>
+            <!-- /.project -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.grid -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+  </div>
+  <!-- /.content-wrapper -->
+   <footer class="bg-navy text-inverse">
+    <div class="container pt-15 pt-md-10 pb-13 pb-md-15">
+      <div class="d-lg-flex flex-row align-items-lg-center">
+        <h3 class="display-4 mb-6 mb-lg-0 pe-lg-20 pe-xl-22 pe-xxl-25 text-white">Give us a call today to handle all your junk hauling needs.</h3>
+        <a href="tel:520-600-6322" class="btn btn-primary btn-lg rounded-pill mb-0 btn-icon btn-icon-start text-white"><i class="uil uil-phone"></i>520-600-6322</a>
+      </div>
+      <!--/div -->
+      <hr class="mt-11 mb-12" />
+      <div class="row gy-6 gy-lg-0">
+        <div class="col-md-4 col-lg-3">
+          <div class="widget">
+            <img class="mb-4" src="/logo_200.png" alt="Clutter Cowboys Logo" />
+            <p class="mb-4">Clutter Cowboys © 2023. <br class="d-none d-lg-block" />All rights reserved.</p>
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /column -->
+        <div class="col-md-4 col-lg-3">
+          <div class="widget">
+            <h4 class="widget-title text-white mb-3">Areas We Service</h4>
+            <ul class="unordered-list bullet-primary">
+              <li>Central Tucson</li>
+              <li>Oro Valley</li>
+              <li>Marana</li>
+              <li>Catalina Foothills</li>
+              <li>South Tucson</li>
+              <li>Corona de Tucson</li>
+              <li>Vail</li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /column -->
+        <div class="col-md-4 col-lg-3">
+          <div class="widget">
+            <h4 class="widget-title text-white mb-3">Important Links</h4>
+            <ul class="list-unstyled  mb-0">
+              <!-- <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Projects</a></li> -->
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /column -->
+        <div class="col-md-12 col-lg-3">
+          <div class="widget">
+            <h4 class="widget-title text-white mb-3">Get in Touch</h4>
+            <address class="pe-xl-15 pe-xxl-17">Sunny Tucson, AZ</address>
+            <a href="mailto:#">hello@cluttercowboys.com</a><br /><a href="tel:520-314-7544">520-314-7544</a>
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /column -->
+      </div>
+      <!--/.row -->
+    </div>
+    <!-- /.container -->
+  </footer>
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+  
+   <script is:inline src="/scripts/vendor/headhesive.min.js"></script>
+   <script is:inline src="/scripts/vendor/imagesloaded.pkgd.min.js"></script>
+   <script is:inline src="/scripts/vendor/isotope.pkgd.min.js"></script>
+   <script is:inline src="/scripts/vendor/scrollCue.min.js"></script>
+   <script is:inline src="/scripts/vendor/smoothscroll.js"></script>
+   <script is:inline src="/scripts/vendor/svg-inject.min.js"></script>
+   <script is:inline src="/scripts/theme.js"></script>
+</body>
+
+</html>

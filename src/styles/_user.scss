@@ -1,0 +1,38 @@
+// Use this to write your custom SCSS
+
+
+@include media-breakpoint-down(sm) {
+    #page-title-buttons {
+        flex-direction: column;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+   .main-cta-action {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.cursor-pointer { 
+    cursor: pointer;
+}
+
+.user-select-none {
+    user-select: none;
+}
+
+#pile_number {
+    display: inline-block;
+    width: 50px;
+}
+
+#lower_estimate,
+#upper_estimate {
+    display: inline-block;
+    width: 90px;
+}
+
+body {
+    scroll-padding-top: 100px;
+}
