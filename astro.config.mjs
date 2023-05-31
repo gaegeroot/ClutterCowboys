@@ -2,5 +2,6 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://gaegeroot.github.io'
+    site: 'https://gaegeroot.github.io',
+    base: '/cluttertest'
 });
