@@ -41,6 +41,9 @@ footer.bg-dark,
     background-repeat: no-repeat;
     background-attachment: scroll !important;
   }
+  &.bg-top {
+    background-position: top center;
+  }
   &.bg-overlay:before {
     content: "";
     display: block;
