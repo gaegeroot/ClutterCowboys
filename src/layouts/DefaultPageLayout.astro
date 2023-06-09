@@ -1,146 +1,206 @@
 ---
-import HeadContent from '../components/HeadContent.astro';
-import MobileNav from '../components/MobileNav.astro';
-import '../styles/style.scss';
+import HeadContent from "../components/HeadContent.astro";
+import MobileNav from "../components/MobileNav.astro";
+import "../styles/style.scss";
 ---
 
 <!DOCTYPE html>
 <html lang="en">
+  <HeadContent />
 
-<HeadContent />
-
-<body>
-  <div class="content-wrapper">
-    <header class="wrapper mb-2">
-      <div class="bg-primary text-white fw-bold fs-15">
-        <div class="container py-2 d-md-flex flex-md-row  d-none d-md-block">
-          <div class="d-flex flex-row align-items-center">
-            <div class="icon text-white fs-22 mt-1 me-2"> <i class="uil uil-location-pin-alt"></i></div>
-            <address class="mb-0">Tucson, Arizona</address>
+  <body>
+    <div class="content-wrapper">
+      <header class="wrapper mb-2">
+        <div class="bg-primary text-white fw-bold fs-15">
+          <div class="container py-2 d-md-flex flex-md-row d-none d-md-block">
+            <div class="d-flex flex-row align-items-center">
+              <div class="icon text-white fs-22 mt-1 me-2">
+                <i class="uil uil-location-pin-alt"></i>
+              </div>
+              <address class="mb-0">Tucson, Arizona</address>
+            </div>
+            <div class="d-flex flex-row align-items-center me-6 ms-auto">
+              <div class="icon text-white fs-22 mt-1 me-2">
+                <i class="uil uil-phone-volume"></i>
+              </div>
+              <a
+                href="tel:520-600-6322"
+                class="mb-0 text-white link-white hover">520-600-6322</a
+              >
+            </div>
+            <div class="d-flex flex-row align-items-center">
+              <div class="icon text-white fs-22 mt-1 me-2">
+                <i class="uil uil-message"></i>
+              </div>
+              <p class="mb-0">
+                <a
+                  href="mailto:hello@cluttercowboys.com"
+                  class="link-white hover">hello@cluttercowboys.com</a>
+              </p>
+            </div>
           </div>
-          <div class="d-flex flex-row align-items-center me-6 ms-auto">
-            <div class="icon text-white fs-22 mt-1 me-2"> <i class="uil uil-phone-volume"></i></div>
-            <a href="tel:520-600-6322" class="mb-0 text-white link-white hover">520-600-6322</a>
-          </div>
-          <div class="d-flex flex-row align-items-center">
-            <div class="icon text-white fs-22 mt-1 me-2"> <i class="uil uil-message"></i></div>
-            <p class="mb-0"><a href="mailto:hello@cluttercowboys.com" class="link-white hover">hello@cluttercowboys.com</a></p>
-          </div>
+          <!-- /.container -->
         </div>
-        <!-- /.container -->
-      </div>
-      <nav class="navbar navbar-expand-lg classic transparent navbar-light">
-        <div class="container flex-lg-row flex-nowrap align-items-center">
-          <div class="navbar-brand w-100 py-3">
-            <a href="/">
-              <img src="/images/cc-text-logo.png"  alt="Clutter Cowboys logo" />
-            </a>
+        <nav class="navbar navbar-expand-lg classic transparent navbar-light">
+          <div class="container flex-lg-row flex-nowrap align-items-center">
+            <div class="navbar-brand w-100 py-3">
+              <a href="/">
+                <img
+                  src="/images/cc-text-logo.png"
+                  alt="Clutter Cowboys logo"
+                />
+              </a>
+            </div>
+            <MobileNav />
+            <!-- /.navbar-collapse -->
+            <div class="navbar-other ms-lg-4">
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <li class="nav-item">
+                  <a
+                    href="tel:520-600-6322"
+                    class="btn btn-sm btn-primary rounded-pill text-white"
+                    >520-600-6322</a
+                  >
+                </li>
+                <li class="nav-item d-lg-none">
+                  <button class="hamburger offcanvas-nav-btn"
+                    ><span></span></button
+                  >
+                </li>
+              </ul>
+              <!-- /.navbar-nav -->
+            </div>
+            <!-- /.navbar-other -->
           </div>
-          <MobileNav />
-          <!-- /.navbar-collapse -->
-          <div class="navbar-other ms-lg-4">
-            <ul class="navbar-nav flex-row align-items-center ms-auto">
-              <li class="nav-item">
-                <a href="tel:520-600-6322" class="btn btn-sm btn-primary rounded-pill text-white">520-600-6322</a>
-              </li>
-              <li class="nav-item d-lg-none">
-                <button class="hamburger offcanvas-nav-btn"><span></span></button>
-              </li>
-            </ul>
-            <!-- /.navbar-nav -->
-          </div>
-          <!-- /.navbar-other -->
-        </div>
-        <!-- /.container -->
-      </nav>
-      <!-- /.navbar -->
-    </header>
-    <slot />
+          <!-- /.container -->
+        </nav>
+        <!-- /.navbar -->
+      </header>
+      <slot />
 
-    <section class="wrapper bg-light">
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d432351.8145904084!2d-111.29188605104093!3d32.15708361784303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8923941036283a09%3A0x7efdef30ad58c8e8!2sClutter%20Cowboys!5e0!3m2!1sen!2sus!4v1686327651864!5m2!1sen!2sus" style="width:100%; height: 500px; border:0" allowfullscreen></iframe>
+      <section class="wrapper bg-light">
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d432351.8145904084!2d-111.29188605104093!3d32.15708361784303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8923941036283a09%3A0x7efdef30ad58c8e8!2sClutter%20Cowboys!5e0!3m2!1sen!2sus!4v1686327651864!5m2!1sen!2sus"
+            style="width:100%; height: 500px; border:0"
+            allowfullscreen></iframe>
+        </div>
+        <!-- /.map -->
+      </section>
     </div>
-      <!-- /.map -->
-    </section>
-  </div>
-  <!-- /.content-wrapper -->
-   <footer class="bg-navy text-inverse">
-    <div class="container pt-15 pt-md-10 pb-13 pb-md-15">
-      <div class="d-lg-flex flex-row align-items-lg-center">
-        <h3 class="display-4 mb-6 mb-lg-0 pe-lg-20 pe-xl-22 pe-xxl-25 text-white">Give us a call today to handle all your junk hauling needs.</h3>
-        <a href="tel:520-600-6322" class="btn btn-primary btn-lg rounded-pill mb-0 btn-icon btn-icon-start text-white"><i class="uil uil-phone"></i>520-600-6322</a>
+    <!-- /.content-wrapper -->
+    <footer class="bg-navy text-inverse">
+      <div class="container pt-15 pt-md-10 pb-13 pb-md-15">
+        <div class="d-lg-flex flex-row align-items-lg-center">
+          <h3
+            class="display-4 mb-6 mb-lg-0 pe-lg-20 pe-xl-22 pe-xxl-25 text-white"
+          >
+            Give us a call today to handle all your junk hauling needs.
+          </h3>
+          <a
+            href="tel:520-600-6322"
+            class="btn btn-primary btn-lg rounded-pill mb-0 btn-icon btn-icon-start text-white"
+            ><i class="uil uil-phone"></i>520-600-6322</a
+          >
+        </div>
+        <!--/div -->
+        <hr class="mt-11 mb-12" />
+        <div class="row gy-6 gy-lg-0">
+          <div class="col-md-4 col-lg-3">
+            <div class="widget">
+              <img
+                class="mb-4"
+                src="/logo_200.png"
+                alt="Clutter Cowboys Logo"
+              />
+              <p class="mb-4">
+                Clutter Cowboys © 2023. <br class="d-none d-lg-block" />All
+                rights reserved.
+              </p>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /column -->
+          <div class="col-md-4 col-lg-3">
+            <div class="widget">
+              <h4 class="widget-title text-white mb-3">Areas We Service</h4>
+              <ul class="unordered-list bullet-primary">
+                <li>Central Tucson</li>
+                <li>Oro Valley</li>
+                <li>Marana</li>
+                <li>Catalina Foothills</li>
+                <li>South Tucson</li>
+                <li>Corona de Tucson</li>
+                <li>Vail</li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /column -->
+          <div class="col-md-4 col-lg-3">
+            <div class="widget">
+              <h4 class="widget-title text-white mb-3">Important Links</h4>
+              <ul class="list-unstyled mb-0">
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact-us">Contact Us</a></li>
+                <li><a href="/terms-of-use">Terms of Use</a></li>
+                <li><a href="/privacy-policy">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /column -->
+          <div class="col-md-12 col-lg-3">
+            <div class="widget">
+              <h4 class="widget-title text-white mb-3">Get in Touch</h4>
+              <address class="pe-xl-15 pe-xxl-17">Sunny Tucson, AZ</address>
+              <a href="mailto:#">hello@cluttercowboys.com</a><br /><a
+                href="tel:520-600-6322">520-600-6322</a
+              >
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /column -->
+        </div>
+        <!--/.row -->
       </div>
-      <!--/div -->
-      <hr class="mt-11 mb-12" />
-      <div class="row gy-6 gy-lg-0">
-        <div class="col-md-4 col-lg-3">
-          <div class="widget">
-            <img class="mb-4" src="/logo_200.png" alt="Clutter Cowboys Logo" />
-            <p class="mb-4">Clutter Cowboys © 2023. <br class="d-none d-lg-block" />All rights reserved.</p>
-          </div>
-          <!-- /.widget -->
-        </div>
-        <!-- /column -->
-        <div class="col-md-4 col-lg-3">
-          <div class="widget">
-            <h4 class="widget-title text-white mb-3">Areas We Service</h4>
-            <ul class="unordered-list bullet-primary">
-              <li>Central Tucson</li>
-              <li>Oro Valley</li>
-              <li>Marana</li>
-              <li>Catalina Foothills</li>
-              <li>South Tucson</li>
-              <li>Corona de Tucson</li>
-              <li>Vail</li>
-            </ul>
-          </div>
-          <!-- /.widget -->
-        </div>
-        <!-- /column -->
-        <div class="col-md-4 col-lg-3">
-          <div class="widget">
-            <h4 class="widget-title text-white mb-3">Important Links</h4>
-            <ul class="list-unstyled  mb-0">
-              <!-- <li><a href="#">About Us</a></li>
-                <li><a href="#">Our Story</a></li>
-                <li><a href="#">Projects</a></li> -->
-              <li><a href="/terms-of-use">Terms of Use</a></li>
-              <li><a href="/privacy-policy">Privacy Policy</a></li>
-            </ul>
-          </div>
-          <!-- /.widget -->
-        </div>
-        <!-- /column -->
-        <div class="col-md-12 col-lg-3">
-          <div class="widget">
-            <h4 class="widget-title text-white mb-3">Get in Touch</h4>
-            <address class="pe-xl-15 pe-xxl-17">Sunny Tucson, AZ</address>
-            <a href="mailto:#">hello@cluttercowboys.com</a><br /><a href="tel:520-600-6322">520-600-6322</a>
-          </div>
-          <!-- /.widget -->
-        </div>
-        <!-- /column -->
-      </div>
-      <!--/.row -->
+      <!-- /.container -->
+    </footer>
+    <div class="progress-wrap">
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+      </svg>
     </div>
-    <!-- /.container -->
-  </footer>
-  <div class="progress-wrap">
-    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-    </svg>
-  </div>
-  
-    <script is:inline src=`${Astro.site.origin}/scripts/vendor/bootstrap.bundle.min.js`></script>
-    <script is:inline src=`${Astro.site.origin}/scripts/vendor/headhesive.min.js`></script>
-    <script is:inline src=`${Astro.site.origin}/scripts/vendor/imagesloaded.pkgd.min.js`></script>
-    <script is:inline src=`${Astro.site.origin}/scripts/vendor/isotope.pkgd.min.js`></script>
-    <script is:inline src=`${Astro.site.origin}/scripts/vendor/scrollCue.min.js`></script>
-    <script is:inline src=`${Astro.site.origin}/scripts/vendor/smoothscroll.js`></script>
-    <script is:inline src=`${Astro.site.origin}/scripts/vendor/svg-inject.min.js`></script>
-    <script is:inline src=`${Astro.site.origin}/scripts/vendor/swiper-bundle.min.js`></script>
+
+    <script
+      is:inline
+      src=`${Astro.site.origin}/scripts/vendor/bootstrap.bundle.min.js`
+    ></script>
+    <script
+      is:inline
+      src=`${Astro.site.origin}/scripts/vendor/headhesive.min.js`></script>
+    <script
+      is:inline
+      src=`${Astro.site.origin}/scripts/vendor/imagesloaded.pkgd.min.js`
+    ></script>
+    <script
+      is:inline
+      src=`${Astro.site.origin}/scripts/vendor/isotope.pkgd.min.js`></script>
+    <script is:inline src=`${Astro.site.origin}/scripts/vendor/scrollCue.min.js`
+    ></script>
+    <script is:inline src=`${Astro.site.origin}/scripts/vendor/smoothscroll.js`
+    ></script>
+    <script
+      is:inline
+      src=`${Astro.site.origin}/scripts/vendor/svg-inject.min.js`></script>
+    <script
+      is:inline
+      src=`${Astro.site.origin}/scripts/vendor/swiper-bundle.min.js`></script>
     <script is:inline src=`${Astro.site.origin}/scripts/theme.js`></script>
-</body>
-
+  </body>
 </html>
