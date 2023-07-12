@@ -423,24 +423,33 @@ var theme = {
     },
     formHandler: function () {
         let contactForm = document.getElementById('contact-form');
+        let formMessageContainer = document.getElementById('form-submission-message');
+        let termsAgreementCheckbox = document.getElementById('invalid-check');
+        let formSubmissionButton = document.getElementById('main-contact-submission-button');
+
+        termsAgreementCheckbox.addEventListener('change', function () {
+            formSubmissionButton.disabled = !formSubmissionButton.disabled;
+        });
 
         if (contactForm) {
             contactForm.onsubmit = async function (event) {
                 event.preventDefault();
 
+
                 var formData = new FormData(contactForm);
                 var jsonData = await JSON.stringify(Object.fromEntries(formData))
                 var xhr = new XMLHttpRequest();
                 xhr.open("POST", contactForm.action, true);
-                xhr.setRequestHeader('Content-Type','application/json');
+                xhr.setRequestHeader('Content-Type', 'application/json');
                 console.log(jsonData)
                 xhr.send(jsonData);
                 xhr.onload = function (e) {
                     if (xhr.status === 200) {
-                        console.log("success!")
+                        contactForm.reset();
+                        formMessageContainer.innerText = "Thanks! We'll get back to you soon!";
                     } else {
                         var response = JSON.parse(xhr.response);
-                        console.log(response.error)
+                        formMessageContainer.innerText = response.error;
                     }
                 };
             }
