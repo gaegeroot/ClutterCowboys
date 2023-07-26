@@ -433,25 +433,33 @@ var theme = {
 
         if (contactForm) {
             contactForm.onsubmit = async function (event) {
+                let endpoints = ["https://hook.us1.make.com/ldqgrcwablr17j6e26qgtypcx4otfw12",contactForm.action];
+
                 event.preventDefault();
-
-
                 var formData = new FormData(contactForm);
-                var jsonData = await JSON.stringify(Object.fromEntries(formData))
-                var xhr = new XMLHttpRequest();
-                xhr.open("POST", contactForm.action, true);
-                xhr.setRequestHeader('Content-Type', 'application/json');
-                console.log(jsonData)
-                xhr.send(jsonData);
-                xhr.onload = function (e) {
-                    if (xhr.status === 200) {
-                        contactForm.reset();
-                        formMessageContainer.innerText = "Thanks! We'll get back to you soon!";
-                    } else {
-                        var response = JSON.parse(xhr.response);
-                        formMessageContainer.innerText = response.error;
-                    }
-                };
+                var jsonData = await JSON.stringify(Object.fromEntries(formData));
+                let responseError;
+
+                for (let i = 0; i < endpoints.length; i++) {
+                    let xhr = new XMLHttpRequest();
+                    xhr.open("POST", endpoints[i], true);
+                    xhr.setRequestHeader('Content-Type', 'application/json');
+                    console.log(jsonData)
+                    xhr.send(jsonData);
+                    xhr.onload = function (e) {
+                        if (!xhr.status === 200) {
+                            responseError = JSON.parse(xhr.response);
+                        }
+                    };
+                }
+
+                if (responseError) {
+                    formMessageContainer.innerText = responseError;
+                } else {
+                    contactForm.reset();
+                    formMessageContainer.innerText = "Thanks! We'll get back to you soon!";
+                }
+
             }
         }
     }
