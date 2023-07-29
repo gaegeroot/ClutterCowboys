@@ -456,7 +456,9 @@ var theme = {
                 if (responseError) {
                     formMessageContainer.innerText = responseError;
                 } else {
+                    gtag_report_conversion();
                     contactForm.reset();
+                    formSubmissionButton.disabled = true;
                     formMessageContainer.innerText = "Thanks! We'll get back to you soon!";
                 }
 
