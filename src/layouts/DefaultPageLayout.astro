@@ -2,11 +2,12 @@
 import HeadContent from "../components/HeadContent.astro";
 import MobileNav from "../components/MobileNav.astro";
 import "../styles/style.scss";
+const {canonical} = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-  <HeadContent />
+  <HeadContent canonical={canonical}/>
 
   <body>
     <div class="content-wrapper">

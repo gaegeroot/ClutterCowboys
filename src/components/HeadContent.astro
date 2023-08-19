@@ -1,3 +1,6 @@
+---
+const { canonical } = Astro.props;
+---
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,6 +29,7 @@
   <meta property="og:image:width" content="1600" />
   <meta property="og:image:height" content="836" />
 
+  <link rel="canonical" href={canonical || Astro.request.url} />
   <link rel="sitemap" href="/sitemap-index.xml" />
 
   <link rel="shortcut icon" href=`${Astro.site.origin}/favicon.png` />
