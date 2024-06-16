@@ -1,0 +1,217 @@
+import { c as createAstro, a as createComponent, r as renderTemplate, f as renderComponent, m as maybeRenderHead } from '../astro.2717e7ce.mjs';
+import 'html-escaper';
+import { $ as $$DefaultPageLayout } from './404.astro.86ad7fe3.mjs';
+/* empty css                         */
+const $$Astro = createAstro();
+const $$ContactUs = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
+  Astro2.self = $$ContactUs;
+  return renderTemplate`${renderComponent($$result, "DefaultPageLayout", $$DefaultPageLayout, {}, { "default": ($$result2) => renderTemplate`
+  ${maybeRenderHead($$result2)}<section class="wrapper image-wrapper bg-image bg-overlay text-white" data-image-src="/images/tucson.jpg">
+    <div class="container pt-16 pb-21 pb-md-21 text-center">
+      <div class="row">
+        <div class="col-sm-10 col-md-6 mx-auto">
+          <h1 class="display-1 text-white mb-3">
+            Have questions? Get in touch and we'll help you out!
+          </h1>
+          <p class="lead px-xl-10 px-xxl-10">
+            All we do is help people. Give us a call or shoot us a message to
+            see what we can do for you.
+          </p>
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  
+  <section class="wrapper bg-light">
+    <div class="container pb-14 pb-md-16">
+      <div class="row">
+        <div class="col mt-n19 mb-16">
+          <div class="card shadow-lg">
+            <div class="row gx-0">
+              <div class="col-lg-5 image-wrapper bg-image bg-cover rounded-top rounded-lg-start d-none d-md-block" data-image-src="/images/relaxing-at-home.jpg">
+              </div>
+    
+              <div class="col-lg-7">
+                <div class="p-10 p-md-11 p-lg-13">
+                  <h2 class="display-4 mb-3">Let's Talk</h2>
+                  <p class="lead fs-lg">
+                    We're here to answer all your questions and address any
+                    concerns you may have about our premier junk removal
+                    services. At Clutter Cowbys, we value clear communication
+                    and are committed to providing exceptional customer service.
+                  </p>
+                  <p>
+                    Whether you need assistance scheduling a pickup, want to
+                    inquire about our pricing options, or simply have a general
+                    inquiry, we're just a message away. Reach out to us today
+                    and let us help you declutter your space with ease and
+                    efficiency. Your satisfaction is our top priority, and we
+                    look forward to assisting you!
+                  </p>
+                  <div class="d-flex text-center justify-content-center justify-content-lg-start flex-wrap" id="page-title-buttons" data-cues="slideInDown" data-group="page-title-buttons" data-delay="900">
+                    <span><a href="tel:520-600-6322" class="btn btn-primary rounded-pill btn-icon btn-icon-start text-white me-4 mt-5"><i class="uil uil-phone"></i>520-600-6322</a></span>
+                    <div class="d-flex mt-5 justify-content-center">
+                      <span class="me-4 fs-22 mt-1">or</span>
+                      <a href="#send-a-message" class="btn btn-expand btn-soft-primary rounded-pill scroll">
+                        <i class="uil uil-arrow-right"></i>
+                        <span>Shoot us a message</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+    
+            </div>
+            
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+      <div class="row" id="send-a-message">
+        <div class="col-xl-10 mx-auto">
+          <div class="row gy-10 gx-lg-8 gx-xl-12">
+            <div class="col-lg-8">
+              <form class="contact-form needs-validation" method="post" action="https://api.staticforms.xyz/submit" novalidate id="contact-form">
+              <input type="hidden" name="accessKey" value="28b45f50-051a-47f4-8378-7add50f38e10">
+              <input type="text" name="honeypot" style="display: none;">
+                <div class="messages"></div>
+                <div class="row gx-4">
+                  <div class="col-md-6">
+                    <div class="form-floating mb-4">
+                      <input id="form_name" type="text" name="$firstName" class="form-control" placeholder="Jane" required>
+                      <label for="form_name">First Name *</label>
+                      <div class="valid-feedback">Looks good!</div>
+                      <div class="invalid-feedback">
+                        Please enter your first name.
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /column -->
+                  <div class="col-md-6">
+                    <div class="form-floating mb-4">
+                      <input id="form_lastname" type="text" name="$lastName" class="form-control" placeholder="Doe">
+                      <label for="form_lastname">Last Name</label>
+                      <div class="valid-feedback">Looks good!</div>
+                      <div class="invalid-feedback">
+                        Please enter your last name.
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /column -->
+                  <div class="col-md-6">
+                    <div class="form-floating mb-4">
+                      <input id="form_email" type="email" name="email" class="form-control" placeholder="jane.doe@example.com">
+                      <label for="form_email">Email</label>
+                      <div class="valid-feedback">Looks good!</div>
+                      <div class="invalid-feedback">
+                        Please provide a valid email address.
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /column -->
+                  <div class="col-md-6">
+                    <div class="form-floating mb-4">
+                      <input id="form_phone" type="phone" name="phone" class="form-control" placeholder="520-123-4567">
+                      <label for="form_phone">Phone *</label>
+                      <div class="valid-feedback">Looks good!</div>
+                      <div class="invalid-feedback">
+                        Please provide a valid phone number.
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /column -->
+                  <div class="col-12">
+                    <div class="form-floating mb-4">
+                      <textarea id="form_message" name="message" class="form-control" placeholder="Your message" style="height: 150px" required></textarea>
+                      <label for="form_message">Message *</label>
+                      <div class="valid-feedback">Looks good!</div>
+                      <div class="invalid-feedback">
+                        Please enter your messsage.
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /column -->
+                  <div class="col-12">
+                    <div class="form-check mb-4">
+                      <input class="form-check-input" type="checkbox" value="" id="invalid-check" required>
+                      <label class="form-check-label" for="invalid-check">
+                        I agree to <a href="/terms-of-use" class="text-primary hover">terms</a> and  <a href="/privacy-policy" class="text-primary hover">policy</a>.
+                      </label>
+                    </div>
+                  </div>
+                  <!-- /column -->
+                  <div class="col-12">
+                    <input id="main-contact-submission-button" disabled type="submit" class="btn btn-primary rounded-pill btn-send mb-3" value="Send message">
+                    <p class="text-muted">
+                      <strong>*</strong> These fields are required.
+                    </p>
+                    <h4 id="form-submission-message" class="fs-15 text-uppercase text-primary"></h4>
+                  </div>
+                  <!-- /column -->
+                </div>
+                <!-- /.row -->
+              </form>
+              <!-- /form -->
+            </div>
+
+            <div class="col-lg-4">
+              <div class="d-flex flex-row">
+                <div>
+                  <div class="icon text-primary fs-28 me-4 mt-n1">
+                    <i class="uil uil-location-pin-alt"></i>
+                  </div>
+                </div>
+                <div>
+                  <h5 class="mb-1">Address</h5>
+                  <address>Tucson, AZ 85747</address>
+                </div>
+              </div>
+              <div class="d-flex flex-row">
+                <div>
+                  <div class="icon text-primary fs-28 me-4 mt-n1">
+                    <i class="uil uil-phone-volume"></i>
+                  </div>
+                </div>
+                <div>
+                  <h5 class="mb-1">Phone</h5>
+                  <p><a href="tel:5206006322">520-600-6322</a></p>
+                </div>
+              </div>
+              <div class="d-flex flex-row">
+                <div>
+                  <div class="icon text-primary fs-28 me-4 mt-n1">
+                    <i class="uil uil-envelope"></i>
+                  </div>
+                </div>
+                <div>
+                  <h5 class="mb-1">E-mail</h5>
+                  <p class="mb-0">
+                    <a href="mailto:cluttercowboys.com" class="link-body">hello@cluttercowboys.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+` })}`;
+}, "/Users/gaegeroot/Desktop/ClutterCowboys/src/pages/contact-us.astro");
+
+const $$file = "/Users/gaegeroot/Desktop/ClutterCowboys/src/pages/contact-us.astro";
+const $$url = "/contact-us";
+
+export { $$ContactUs as default, $$file as file, $$url as url };
