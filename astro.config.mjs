@@ -4,12 +4,12 @@ import sitemap from "@astrojs/sitemap";
 // 
 // https://astro.build/config
 // export default defineConfig({
-//   site: process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://gaegeroot.github.io',
+//   site: process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://astronaut.github.io',
 //   integrations: [sitemap()]
 // });
 
-import vercel from '@astrojs/vercel/serverless';
+import netlify from '@astrojs/netlify';
 export default defineConfig({
   output: 'server',
-  adapter: vercel()
+  adapter: netlify()
 });
